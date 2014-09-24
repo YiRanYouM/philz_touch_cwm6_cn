@@ -27,3 +27,6 @@ or
 
     export RECOVERY_VARIANT=philz
     . build/envsetup.sh && lunch && make -j8 recoveryimage
+
+![Philz Recovery](http://ww2.sinaimg.cn/large/624b7226tw1eknpx8dwf2j20u01hc0z7.jpg)
+

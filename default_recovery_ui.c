@@ -23,7 +23,7 @@
 #include "recovery_settings.h"
 
 char* MENU_HEADERS[] = { NULL };
-
+#ifndef USE_CHINESE_FONT
 char* MENU_ITEMS[] = {
     "Reboot System Now",
     "Install Zip",
@@ -35,7 +35,19 @@ char* MENU_ITEMS[] = {
     "Power Options",
     NULL
 };
-
+#else
+char* MENU_ITEMS[] = {
+    "立即重启",
+    "安装ZIP刷机包",
+    "清除数据&格式化",
+    "备份&恢复备份",
+    "挂载&大容量储存",
+    "高级功能",
+    "Recovery设置",
+    "电源选项",
+    NULL
+};
+#endif
 void device_ui_init(UIParameters* ui_parameters) {
 }
 
